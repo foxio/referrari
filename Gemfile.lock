@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     referrari (0.0.1)
-      rails (~> 4.0.10)
+      rails (>= 4.0.0)
 
 GEM
   remote: https://rubygems.org/
