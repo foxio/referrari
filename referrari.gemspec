@@ -1,23 +1,22 @@
-# coding: utf-8
-lib = File.expand_path('../lib', __FILE__)
-$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'referrari/version'
+$:.push File.expand_path("../lib", __FILE__)
 
-Gem::Specification.new do |spec|
-  spec.name          = "referrari"
-  spec.version       = Referrari::VERSION
-  spec.authors       = ["Joe Kratzat","Bob Mattax"]
-  spec.email         = ["joe@fox.io","bob@fox.io"]
-  spec.summary       = %q{A Gem}
-  spec.description   = %q{It does nothing ... yet}
-  spec.homepage      = ""
-  spec.license       = "MIT"
+# Maintain your gem's version:
+require "referrari/version"
 
-  spec.files         = `git ls-files -z`.split("\x0")
-  spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
-  spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
-  spec.require_paths = ["lib"]
+# Describe your gem and declare its dependencies:
+Gem::Specification.new do |s|
+  s.name        = "referrari"
+  s.version     = Referrari::VERSION
+  s.authors       = ["Joe Kratzat","Bob Mattax"]
+  s.email         = ["joe@fox.io","bob@fox.io"]
+  s.homepage    = ""
+  s.summary     = "A Gem"
+  s.description = "It does nothing ... yet"
 
-  spec.add_development_dependency "bundler", "~> 1.6"
-  spec.add_development_dependency "rake"
+  s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.test_files = Dir["test/**/*"]
+
+  s.add_dependency "rails", ">= 4.0.0"
+
+  s.add_development_dependency "sqlite3"
 end

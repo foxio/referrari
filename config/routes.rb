@@ -1,5 +1,2 @@
-Referrari.parent_engine.routes.draw do
-
-  get "/#{Referrari.home_page}", to: redirect('/')
-
+Referrari::Engine.routes.draw do
 end
