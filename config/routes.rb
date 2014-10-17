@@ -1,5 +1,5 @@
 Referrari::Engine.routes.draw do
 
-  resources :referrals, :only =[:index]
+  resources :referrals, :only => [:index]
 
 end
