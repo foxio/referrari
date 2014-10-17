@@ -6,7 +6,7 @@
 
 TODO: Write a gem description
 
-### Installation
+## Installation
 
 
 Add this line to your application's Gemfile:
@@ -30,6 +30,19 @@ Or install it yourself as:
 $ gem install referrari
 ```
 
+## Usage
+
+TODO: Write usage instructions here
 
 
-### Note: This is an unfinished README.md test.
+## Contributing
+
+Fork it ( github.com/[my-github-username]/referrari/fork )
+
+Create your feature branch (`git checkout -b my-new-feature`)
+
+Commit your changes (`git commit -am 'Add some feature'`)
+
+Push to the branch (`git push origin my-new-feature`)
+
+Create a new Pull Request
