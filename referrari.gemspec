@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Referrari::VERSION
   spec.authors       = ["Joe Kratzat","Bob Mattax"]
   spec.email         = ["joe@fox.io","bob@fox.io"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = %q{A Gem}
+  spec.description   = %q{It does nothing ... yet}
   spec.homepage      = ""
   spec.license       = "MIT"
 

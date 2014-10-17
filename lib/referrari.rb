@@ -1,5 +1,5 @@
 require "referrari/version"
 
 module Referrari
-  # Your code goes here...
+  require 'referrari/engine' if defined?(Rails)
 end
