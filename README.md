@@ -1,4 +1,5 @@
 # Referrari
+[![Build Status](https://travis-ci.org/foxio/referrari.svg)](https://travis-ci.org/foxio/referrari)
 
 ![Referrari icon](http://foxiowebsite.s3.amazonaws.com/wp-content/uploads/2014/10/referrari-logo-128.png)
 
