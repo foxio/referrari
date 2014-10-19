@@ -5,7 +5,7 @@
 
 ## Overview
 
-TODO: Write a gem description
+A simple referral library.
 
 ## Installation
 
