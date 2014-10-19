@@ -1,5 +1,7 @@
 # Referrari
 [![Build Status](https://travis-ci.org/foxio/referrari.svg)](https://travis-ci.org/foxio/referrari)
+[![Code Climate](https://codeclimate.com/github/foxio/referrari/badges/gpa.svg)](https://codeclimate.com/github/foxio/referrari)
+[![security](https://hakiri.io/github/foxio/referrari/master.svg)](https://hakiri.io/github/foxio/referrari/master)
 
 ![Referrari icon](http://foxiowebsite.s3.amazonaws.com/wp-content/uploads/2014/10/referrari-logo-128.png)
 
