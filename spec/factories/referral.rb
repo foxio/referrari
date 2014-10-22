@@ -1,6 +1,7 @@
 FactoryGirl.define do
 
   factory :referral, class: Referrari::Referral do
+    sequence(:code) { |n| "123-#{n}" }
 
     trait :with_referrer do
       association :referrer, factory: [:user]
