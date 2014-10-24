@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(version: 20141024204302) do
     t.string   "http_referer"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "referrari_referral_code_id"
   end
 
   create_table "users", force: true do |t|

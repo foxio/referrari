@@ -2,6 +2,8 @@ require 'spec_helper'
 
 describe User do
 
+  it { is_expected.to have_many :referral_codes }
+
   describe '#referrals' do
     let(:user) { FactoryGirl.create(:user, :with_referrals) }
 
@@ -20,7 +22,7 @@ describe User do
     it { is_expected.to have_many :referred_users }
     it { is_expected.to respond_to :referred_users }
 
-    it "has referrals" do      
+    it "has referrals" do
       expect(user.referred_users.length).to eq(1)
     end
   end

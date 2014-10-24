@@ -10,6 +10,8 @@ class CreateReferrariReferralCodes < ActiveRecord::Migration
       t.timestamps
     end
 
+    add_column :referrari_referrals, :referrari_referral_code_id, :integer
+
     add_index :referrari_referral_codes, :code, :unique => true
   end
 end
