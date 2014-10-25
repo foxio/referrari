@@ -9,6 +9,8 @@ module Referrari
 
         has_one :referral, :foreign_key => 'resource_id', :class_name => "Referrari::Referral"
         has_one :referred_by, :through => :referral, :source => :referrer
+
+        has_many :referral_codes, :class_name => "Referrari::ReferralCode"
       end
     end
 

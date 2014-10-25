@@ -11,7 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141022001325) do
+ActiveRecord::Schema.define(version: 20141024204302) do
+
+  create_table "referrari_referral_codes", force: true do |t|
+    t.integer  "user_id"
+    t.string   "code"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "referrari_referral_codes", ["code"], name: "index_referrari_referral_codes_on_code", unique: true
 
   create_table "referrari_referrals", force: true do |t|
     t.integer  "referrer_id"
@@ -19,10 +28,8 @@ ActiveRecord::Schema.define(version: 20141022001325) do
     t.string   "http_referer"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "code"
+    t.integer  "referrari_referral_code_id"
   end
-
-  add_index "referrari_referrals", ["code"], name: "index_referrari_referrals_on_code", unique: true
 
   create_table "users", force: true do |t|
     t.string   "email"
