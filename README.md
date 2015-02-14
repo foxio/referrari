@@ -33,10 +33,26 @@ Or install it yourself as:
 $ gem install referrari
 ```
 
+## Getting Started
+
+Run the migrations in your app
+
+```bash
+rake app:referrari:install:migrations
+```
+
 ## Usage
 
-TODO: Write usage instructions here
+### Configuring Models
 
+#### User
+The user model is expected.
+
+```ruby
+class User < ActiveRecord::Base
+  include Referrari::User
+end
+```
 
 ## Contributing
 
