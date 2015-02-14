@@ -37,4 +37,13 @@ describe User do
     it { is_expected.to respond_to :referred_by }
   end
 
+  describe "after save" do
+    let(:user) { FactoryGirl.create(:user, :with_referrals) }
+
+    it "creates a referral_code" do
+      expect(user.referral_codes.length).to eq(1)
+    end
+
+  end
+
 end

@@ -12,6 +12,14 @@ module Referrari
 
         has_many :referral_codes, :class_name => "Referrari::ReferralCode"
 
+        after_create :create_referral_code
+
+        private
+
+        def create_referral_code
+          referral_codes.create
+        end
+
       end
     end
 
