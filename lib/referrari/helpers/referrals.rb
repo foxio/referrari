@@ -3,7 +3,7 @@ require 'action_view/context'
 
 module Referrari
   module Helpers
-    class Referals
+    class Referrals
       # so that this instance can actually "render"
       include ::ActionView::Context
 
