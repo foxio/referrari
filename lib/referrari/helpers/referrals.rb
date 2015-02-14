@@ -7,8 +7,8 @@ module Referrari
       # so that this instance can actually "render"
       include ::ActionView::Context
 
-      def initialize(template, options)
-        @template, @options = template, options
+      def initialize(options)
+        @options = options
         @output_buffer = ActionView::OutputBuffer.new
       end
 
@@ -18,7 +18,7 @@ module Referrari
       end
 
       def to_s
-        "<div>Some content</div>"
+        "Some content"
       end
     end
   end

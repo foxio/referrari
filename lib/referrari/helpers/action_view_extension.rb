@@ -3,7 +3,7 @@ module Referrari
   module ActionViewExtension
     # A helper that renders ???
     def referrari_box(options = {})
-      referals = Referrari::Helpers::Referals.new("some_template", options)
+      referals = Referrari::Helpers::Referrals.new(options)
       referals.to_s
     end
   end
