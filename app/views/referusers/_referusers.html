@@ -46,6 +46,45 @@
 
 .r-refer-users .r-referral-stats .r-referral-stat {
   text-align:center;
+  position:relative;
+}
+
+.r-refer-users .r-referral-stats .r-referral-stat .r-tooltip {
+  position:absolute;
+  border-radius:4px;
+  background:#ccc;
+  color:#fff;
+  top:100%;
+  left:50%;
+  margin-left:-35px;
+  margin-top:5px;
+  width:70px;
+  padding:8px;
+  opacity:0;
+  font-size:12px;
+  line-height:14px;
+  text-align:center;
+  /*@TODO: Rework this to not use display:none to it can have a nice little animation on hover*/
+  display:none;
+}
+
+.r-refer-users .r-referral-stats .r-referral-stat:hover .r-tooltip {
+  opacity:1;
+  margin-top:10px;
+  display:block;
+}
+
+.r-refer-users .r-referral-stats .r-referral-stat .r-tooltip:after {
+  content:'';
+  position:absolute;
+  bottom:100%;
+  left:50%;
+  margin-left:-10px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 10px 10px 10px;
+  border-color: transparent transparent #cccccc transparent;
 }
 
 .r-refer-users .r-referral-stats .r-referral-stat .r-referral-stat-number {
@@ -128,7 +167,6 @@
   line-height:18px;
   padding:5px 0;
   display:block;
-  
 }
 
 .r-refer-users .r-refer-options .r-referral-link .r-share-link a:hover {
@@ -164,10 +202,12 @@
 
   <div class="r-referral-stats">
     <div class="r-referral-stat">
+      <div class="r-tooltip">5 people visited [appname] through your referral</div>
       <div class="r-referral-stat-number">5</div> 
       <div class="r-referral-stat-title">Visits</div>
     </div>
     <div class="r-referral-stat">
+      <div class="r-tooltip">1 person has signed up for [appname] through your referral</div>
       <div class="r-referral-stat-number">1</div> 
       <div class="r-referral-stat-title">Sign Up</div>
     </div>
