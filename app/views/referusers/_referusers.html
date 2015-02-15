@@ -14,6 +14,11 @@
   -moz-box-sizing: border-box; 
   -webkit-box-sizing: border-box; 
   box-sizing: border-box;
+  -webkit-transition: all .15s linear;
+  -moz-transition: all .15s linear;
+  -ms-transition: all .15s linear;
+  -o-transition: all .15s linear;
+  transition: all .15s linear;
 } 
 
 .r-refer-users .r-refer-options {
@@ -23,6 +28,7 @@
 
 .r-refer-users .r-referral-stats {
   width:30%;
+  min-width:140px;
   float:left;
   height:100%;}
 
@@ -35,14 +41,7 @@
   width:100%;
   height:50px;
   position:relative;
-  padding-right:60px;
-}
-
-.r-refer-users .r-refer-options .r-referral-link .r-share-title {
-  font-size:12px;
-  text-transform:upercase;
-  padding:5px 0;
-  color:rgba(0,0,0,.5);
+  padding-right:70px;
 }
 
 .r-refer-users .r-referral-stats .r-referral-stat {
@@ -68,22 +67,72 @@
   padding:10px 0 10px 10px;
   font-size:18px;
   outline:0;
+  border-top-left-radius:4px;
+  border-bottom-left-radius:4px;
 }
 
 .r-refer-users .r-refer-options .r-refer-email .r-refer-email-input:hover {
-  border:1px solid #ccc;
+  border:1px solid #bbb;
+  border-right:0px;
 }
 
+.r-refer-users .r-refer-options .r-refer-email .r-refer-email-input:focus {
+  border:1px solid #ed5b34;
+  border-right:0px;
+}
+
+
+
 .r-refer-users .r-refer-options .r-refer-email .r-refer-email-submit {
-  width:60px;
+  width:70px;
   height:100%;
   font-size:18px;
   display:block;
   position:absolute;
   right:0;
   top:0;
-  background:pink;
+  background:#ed5b34;
+  color:#fff;
   border:0;
+  border-top-right-radius:4px;
+  border-bottom-right-radius:4px;
+}
+
+.r-refer-users .r-refer-options .r-refer-email .r-refer-email-submit:hover {
+  background:#dc3a0f;
+  cursor:pointer;
+}
+
+.r-refer-users .r-refer-options .r-referral-link {
+  margin-bottom:10px;
+}
+
+.r-refer-users .r-refer-options .r-referral-link .r-share-title {
+  font-size:12px;
+  line-height:18px;
+  text-transform:upercase;
+  padding:5px 0 0 0;
+  color:rgba(0,0,0,.5);
+  float:left;
+  margin-right:5px;
+}
+
+.r-refer-users .r-refer-options .r-referral-link .r-share-link {
+  float:left;
+}
+
+.r-refer-users .r-refer-options .r-referral-link .r-share-link a {
+  color:#ed5b34;
+  text-decoration:none;
+  font-size:16px;
+  line-height:18px;
+  padding:5px 0;
+  display:block;
+  
+}
+
+.r-refer-users .r-refer-options .r-referral-link .r-share-link a:hover {
+  color:#dc3a0f;
 }
 
 .r-clear {
@@ -100,7 +149,7 @@
 
     <div class="r-refer-email">
       <input type="text" placeholder="Email" class="r-refer-email-input" />
-      <input type="submit" value="Invite" class="r-refer-email-submit" />
+      <input type="submit" value="Refer" class="r-refer-email-submit" />
     </div>
     <div class="r-referral-link">
       <div class="r-share-title">Share</div>
@@ -108,6 +157,7 @@
       <div class="r-share-link">
         <a href="http://www.appurl.com/refer/kd3H1d">http://www.appurl.com/refer/kd3H1d</a>
       </div>
+      <div class="r-clear"></div>
     </div>
 
   </div>
